@@ -36,4 +36,4 @@ sh "docker rmi $imagename:latest"
 }
 }
 }
-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}
+}
