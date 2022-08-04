@@ -8,7 +8,7 @@ agent any
 stages {
 stage('Cloning Git') {
 steps {
-sh 'rm -rf *'
+sh ('rm -rf *')
 sh 'git clone git@github.com:jigyasumishra321/Jenkinsfile1.git'
 }
 }
