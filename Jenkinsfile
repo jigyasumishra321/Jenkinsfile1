@@ -8,7 +8,8 @@ agent any
 stages {
 stage('Cloning Git') {
 steps {
-git([url: 'git@github.com:jigyasumishra321/Jenkinsfile1.git', branch: 'main'])
+sh 'rm -rf *
+sh 'git clone git@github.com:jigyasumishra321/Jenkinsfile1.git'
 }
 }
 stage('Building image') {
@@ -35,4 +36,4 @@ sh "docker rmi $imagename:latest"
 }
 }
 }
-}
+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}
